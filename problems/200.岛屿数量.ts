@@ -26,7 +26,7 @@ function numIslands(grid: string[][]): number {
         visited.set(`${i}-${j}`, true);
         while(queue.length > 0) {
             // @ts-ignore
-            const [x, y] = queue.pop();
+            const [x, y] = queue.shift();
             for(let i = 0;i < 4;i++) {
                 let nx = x + dx[i];
                 let ny = y + dy[i];
