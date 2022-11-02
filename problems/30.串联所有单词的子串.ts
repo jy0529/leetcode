@@ -15,7 +15,6 @@ function findSubstring(s: string, words: string[]): number[] {
     for(let i = 0;(i + wordsLength) <= s.length;i++) {
         const str = s.substring(i, i + wordsLength);
         if (match(str, words)) {
-            console.log('match')
             ans.push(i);
         }
     }
